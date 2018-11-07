@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webskjema</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<h1>Turistselskap</h1>
+</header>
+
+<div class="container">
+    <header>
+        <h2>Bestillingsskjema</h2>
+    </header>
+
+    <form id="orderForm" method="post">
+
+        <div class="form-double">
+            <label for="firstName">Fornavn:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Fornavn" required/>
+
+            <label for="lastName">Etternavn:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Etternavn" required/>
+        </div>
+
+        <label for="email">E-postadresse:</label>
+        <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="email" id="email" placeholder="E-postadresse" required/>
+
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" pattern="^[0-9]{8,8}$" name="phone" id="phone" placeholder="Telefonnummer" required/>
+
+
+        <div class="form-double">
+            <label for="travelDate">Reisedato:</label>
+            <input type="date" name="date" id="travelDate" placeholder="DD.MM.ÅÅ" required/>
+
+            <label for="quantity">Antall personer:</label>
+            <input type="number" name="quantity" id="quantity" placeholder="Antall personer" min="0" required/>
+        </div>
+
+
+        <div class="form-checkbox">
+            <label for="info1">Hvordan hørte du om oss?</label>
+            <input type="checkbox" name="check" id="info1" value="Facebook"/>
+        </div>
+
+        <button type="submit" id="submitFormBtn">Send</button>
+    </form>
+</div>
+
+
+<footer>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
