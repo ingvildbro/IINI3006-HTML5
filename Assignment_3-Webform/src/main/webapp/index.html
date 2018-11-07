@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webskjema</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<h1>Turistselskap</h1>
+</header>
+
+<section>
+    <div class="container">
+    <header>
+        <h2>Bestillingsskjema</h2>
+    </header>
+
+        <form id="orderForm" method="post">
+
+            <input type="text" name="firstName" id="firstName" placeholder="Fornavn" required/>
+
+            <input type="text" name="lastName" id="lastName" placeholder="Etternavn" required/>
+
+            <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" name="email" id="email" placeholder="E-postadresse" required/>
+
+            <input type="tel" pattern="^[0-9]{8,8}$" name="phone" id="phone" placeholder="Telefonnummer" required/>
+
+
+            <input type="date" name="date" id="travelDate" placeholder="Reisedato" required/>
+
+            <input type="number" name="quantity" id="quantity" placeholder="Antall personer" min="0" required/>
+
+            <input type="checkbox" name="info" id="info" placeholder="Hvordan hørte du om Turistselskapet?"/>
+
+
+
+
+            <button type="submit" id="submitFormBtn">Send</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

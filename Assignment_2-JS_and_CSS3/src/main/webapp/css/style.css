@@ -1,0 +1,34 @@
+body {
+    position: center;
+}
+
+table {
+    border: 5px solid #565353;
+    border-spacing: 0;
+    box-shadow: 10px 10px 10px #888;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #eff2f5;
+}
+
+tr {
+    font-size: 2em;
+}
+
+tr:nth-child(odd) td:nth-child(even),
+tr:nth-child(even) td:nth-child(odd){
+    background-color: #bfccd9;
+}
+
+tr:nth-child(even) td:nth-child(odd) {
+
+}
+
+button {
+    margin: 20px;
+    alignment: center;
+}
