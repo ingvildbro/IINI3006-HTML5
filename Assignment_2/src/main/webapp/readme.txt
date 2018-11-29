@@ -32,8 +32,8 @@ tilbake slik at jeg spiller med hvit igjen.
 
 Noen tips kan være:
 • La knappen (button) kalle en egendefinert JavaScript-funksjon.
-• Gi tabellen en id, for eksempel «mytable» slik at du kan manipulere den med JavaScript.
+• Gi tabellen en id, for eksempel «myTable» slik at du kan manipulere den med JavaScript.
 • Finn ut hvordan du lager en referanse til en celle og bytter ut teksten.
-• Bruk en boolesk verdi for å holde styr på om du spiller med svart eller hvit.
+• Bruk en boolsk verdi for å holde styr på om du spiller med svart eller hvit.
 
 Oppgaven kan løses på mange måter!
