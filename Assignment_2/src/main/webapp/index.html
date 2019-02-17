@@ -7,7 +7,7 @@
 </head>
 <body>
 <table id="chessboard">
-    <tr>
+    <tr id="topFirst">
         <td>&#9820;</td>
         <td>&#9822;</td>
         <td>&#9821;</td>
@@ -17,7 +17,7 @@
         <td>&#9822;</td>
         <td>&#9820;</td>
     </tr>
-    <tr>
+    <tr id="topSecond">
         <td>&#9823;</td>
         <td>&#9823;</td>
         <td>&#9823;</td>
@@ -43,7 +43,7 @@
         <td></td><td></td><td></td><td></td>
         <td></td><td></td><td></td><td></td>
     </tr>
-    <tr>
+    <tr id="botSecond">
         <td>&#9817;</td>
         <td>&#9817;</td>
         <td>&#9817;</td>
@@ -53,18 +53,18 @@
         <td>&#9817;</td>
         <td>&#9817;</td>
     </tr>
-    <tr>
+    <tr id="botFirst">
         <td>&#9814;</td>
         <td>&#9816;</td>
         <td>&#9815;</td>
-        <td>&#9812;</td>
         <td>&#9813;</td>
+        <td>&#9812;</td>
         <td>&#9815;</td>
         <td>&#9816;</td>
         <td>&#9814;</td>
     </tr>
 </table>
-<button id="switchSide">Switch side</button>
+<button id="switchSide" onclick="switchSides()">Switch side</button>
 
 <script src="js/script.js"></script>
 </body>

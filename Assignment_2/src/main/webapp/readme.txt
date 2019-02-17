@@ -1,6 +1,6 @@
-==========================================
-==== Øving 2: Dynamikk med JS og CSS3 ====
-==========================================
+=====================================================
+======    Øving 2:  Dynamikk med JS og CSS3    ======
+=====================================================
 
 JavaScript og CSS3 er to standarder som er nært knyttet til HTML5.
 I leksjonen og ved hjelp av webressurser skal du kunne løse
