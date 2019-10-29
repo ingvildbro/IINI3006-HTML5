@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<header>
+    <h1>Pythagoras' theorem</h1>
+</header>
+<main>
+    <section class="graphics">
+        <canvas id="pythagoras"></canvas>
+    </section>
+    <section class="calc">
+        <span>
+            <label for="catA" class="label">Cathetus A:</label>
+            <input type="number" name="catA" id="catA"/>
+        </span>
+        <span>
+            <label for="catB" class="label">Cathetus B:</label>
+            <input type="number" name="catB" id="catB"/>
+        </span>
+        <span>
+            <label for="hypC" class="label">Hypotenuse C:</label>
+            <input type="number" name="hypotenuse" id="hypC"/>
+        </span>
+        <span>
+            <label for="area" class="label">Area:</label>
+            <input type="number" name="area" id="area"/>
+        </span>
+    </section>
+    <section class="sliders">
+        <div class="slider-group">
+            <label for="sliderA" class="label">Cathetus A</label>
+            <input type="range" name="sliderA" id="sliderA" min="1" max="100" step="1" value="10"/>
+            <span class="slider-value" id="valueSliderA"></span>
+        </div>
+        <div class="slider-group">
+            <label for="sliderB" class="label">Cathetus B</label>
+            <input type="range" name="sliderB" id="sliderB" min="1" max="100" step="1" value="10"/>
+            <span class="slider-value"></span>
+        </div>
+    </section>
+</main>
 
+<script src="js/script.js"></script>
 </body>
 </html>

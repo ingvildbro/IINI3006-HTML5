@@ -25,7 +25,7 @@ tr {
 
 tr:nth-child(odd) td:nth-child(even),
 tr:nth-child(even) td:nth-child(odd){
-    background-color: #bfccd9;
+    background: linear-gradient(to bottom right, #85a8cc, #cfdae6);
 }
 
 button {

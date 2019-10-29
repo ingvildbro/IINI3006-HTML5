@@ -6,35 +6,62 @@
     <title>Parkering</title>
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
           crossorigin=""/>
-
-    <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
+
+    <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="container-header">
-    <a href="#" class="white" id="menu_icon">
-        <i class="material-icons">menu</i>
-    </a>
-    <h1><a href="index.html">Oversikt over parkeringsplasser</a></h1>
-    <a href="#" class="white" id="more_icon">
-        <i class="material-icons">more_vert</i>
-    </a>
-</header>
-<aside class="popup-menu hide" id="menu">
-    <ul>
-        <li><a href="#">Parkering<i class="material-icons">chevron_right</i></a></li>
-        <li><a href="#">Statistikk<i class="material-icons">chevron_right</i></a></li>
-        <li><a href="#">Kart<i class="material-icons">chevron_right</i></a></li>
-        <li><a href="#">Om oss<i class="material-icons">chevron_right</i></a></li>
-    </ul>
-</aside>
+
+<div class="main-container">
+    <header class="main-header">
+        <a href="#" class="white" id="menu_icon">
+            <i class="material-icons">menu</i>
+        </a>
+        <h1><a href="index.html" class="white">Oversikt over parkeringsplasser</a></h1>
+        <a href="#" class="white" id="more_icon">
+            <i class="material-icons">more_vert</i>
+        </a>
+    </header>
+
+    <nav class="main-nav popup-menu">
+        <ul>
+            <li><a href="#">Parkering</a></li>
+            <li><a href="#">Statistikk</a></li>
+            <li><a href="#">Kart</a></li>
+            <li><a href="#">Om oss</a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <section class="map-container">
+            <header>
+                <h1>Kart</h1>
+            </header>
+            <div class="map" id="parkingMap"></div>
+            <footer>
+                <button type="button" id="hideMapBtn">Skjul</button>
+            </footer>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <nav>
+            <a href="#" class="white" id="help_icon">
+                <i class="material-icons">help</i>
+            </a>
+        </nav>
+    </footer>
+</div>
+
 <dialog class="popup-settings hide" id="settings">
     <h2>Innstillinger</h2>
     <form action="" class="settings-form" id="settingsForm">
@@ -45,26 +72,17 @@
     </form>
 </dialog>
 
-<div class="container">
-    <section class="map-container">
-        <header>
-            <h2>Kart</h2>
-        </header>
-        <div id="parkingMap"></div>
-        <footer>
-            <button type="button" id="hideMapBtn">Skjul</button>
-        </footer>
-    </section>
-</div>
+<nav class="main-nav popup-menu hide" id="menu">
+    <ul>
+        <li><a href="#">Parkering<i class="material-icons">chevron_right</i></a></li>
+        <li><a href="#">Statistikk<i class="material-icons">chevron_right</i></a></li>
+        <li><a href="#">Kart<i class="material-icons">chevron_right</i></a></li>
+        <li><a href="#">Om oss<i class="material-icons">chevron_right</i></a></li>
+    </ul>
+</nav>
 
-<footer>
-    <nav>
-        <a href="#" class="white" id="help_icon">
-            <i class="material-icons">help</i>
-        </a>
-    </nav>
-</footer>
-
+<script src="js/settings.js"></script>
+<script src="js/map.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

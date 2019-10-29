@@ -1,5 +1,11 @@
+const $submit = $('#submitBtn');
 
+$(document).ready(function () {
 
-$("#submitFormBtn").click(function(){
+});
 
+$($submit).click(function(){
+    let formerror = false;
+
+    //if ()
 });
